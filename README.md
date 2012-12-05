@@ -1,1 +1,1 @@
-BloodyFruits is a super basic game to show how you can create an OS games with cocos2D in a very simple way. The game basically consists of touching the screen as fast as you can without using two fingers
+BloodyFruits is a super basic game to show how you can create an iOS game with cocos2D in a very simple way. The game basically consists of touching the screen as fast as you can without using two fingers
