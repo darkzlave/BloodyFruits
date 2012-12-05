@@ -9,6 +9,8 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "SimpleAudioEngine.h"
+#import "CCLabelTTF+Resize.h"
 
 // HelloWorldLayer implementation
 @implementation HelloWorldLayer
@@ -34,22 +36,68 @@
 	// always call "super" init
 	// Apple recommends to re-assign "self" with the "super" return value
 	if( (self=[super init])) {
-		
-		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCLabelTTF *fuckingScore = [CCLabelTTF labelWithString:@"BITCHES: 0" fontName:@"arial" fontSize:30];
+        fuckingScore.position = ccp(110,300);
+        fuckingScore.color = ccRED;
+        [self addChild:fuckingScore z:30 tag:666];
+        
+//        CCLabelTTF *tapLabel = [CCLabelTTF labelWithStringAutoSize:@"Tap Again to Skip" fontName:@"nb_strange" fontSize:20];
+//        tapLabel.position = ccp(240,25);
+//        [self addChild:tapLabel z:25];
 
-		// ask director the the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-	
-		// position the label on the center of the screen
-		label.position =  ccp( size.width /2 , size.height/2 );
-		
-		// add the label as a child to this Layer
-		[self addChild: label];
+        CCLayerColor *colorBackground = [CCLayerColor layerWithColor:ccc4(130, 0, 34,255)];
+        colorBackground.anchorPoint = ccp(0,0);
+        colorBackground.position = ccp(0,0);
+        colorBackground.opacity = 0;
+        [self addChild:colorBackground z:0 tag:11];
+        CCSprite *fruit1 = [CCSprite spriteWithFile:@"fruit1.png"];
+        [fruit1 runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.2f],[CCFadeOut actionWithDuration:0.2f], nil]]];
+        CCSprite *fruit2 = [CCSprite spriteWithFile:@"fruit2.png"];
+        [fruit2 runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.2f],[CCFadeOut actionWithDuration:0.2f], nil]]];
+        CCSprite *fruit3 = [CCSprite spriteWithFile:@"fruit3.png"];
+        [fruit3 runAction:[CCRepeatForever actionWithAction:[CCSequence actions:[CCFadeIn actionWithDuration:0.2f],[CCFadeOut actionWithDuration:0.2f], nil]]];
+        fruit1.position = ccp(170,300);
+        fruit2.position = ccp(30,30);
+        fruit3.position = ccp(350,300);
+        [self addChild:fruit1 z:0 tag:12];
+        [self addChild:fruit2 z:0 tag:13];
+        [self addChild:fruit3 z:0 tag:14];
+        self.isTouchEnabled = YES;
+        [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"love.mp3" loop:YES];        
 	}
 	return self;
 }
+-(void) registerWithTouchDispatcher
+{
+	[[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:-1 swallowsTouches:NO];
+}
+- (BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+    if([[event allTouches] count] == 2){
+        total = 0;
+    }
+    CCLayerColor *colorBackground = (CCLayerColor*)[self getChildByTag:11];
+    [colorBackground runAction:[CCFadeIn actionWithDuration:0.3f]];
+    [colorBackground runAction:[CCTintBy actionWithDuration:0.3f red:100 green:10 blue:50]];
+    return TRUE;
+}
+- (void)ccTouchMoved:(UITouch *)touch withEvent:(UIEvent *)event {
 
+}
+-(void) ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CCSprite *fruit1 = (CCSprite*)[self getChildByTag:12];
+    CCSprite *fruit2 = (CCSprite*)[self getChildByTag:13];
+    CCSprite *fruit3 = (CCSprite*)[self getChildByTag:14];
+    fruit1.position = ccp(arc4random() % 480,arc4random()%320);
+    fruit2.position = ccp(arc4random() % 480,arc4random()%320);
+    fruit3.position = ccp(arc4random() % 480,arc4random()%320);
+    CCLayerColor *colorBackground = (CCLayerColor*)[self getChildByTag:11];
+    [colorBackground runAction:[CCFadeOut actionWithDuration:0.3f]];
+    
+    CCLabelTTF *fuckingScore = (CCLabelTTF*)[self getChildByTag:666];
+    total++;
+    [fuckingScore setString:[@"BITCHES: " stringByAppendingFormat:@"%i",total]];
+}
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
 {

@@ -104,9 +104,6 @@
 		46C7B5B115D639B700215EE2 /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5B015D639B700215EE2 /* CDOpenALSupport.m */; };
 		46C7B5B415D639B800215EE2 /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5B315D639B800215EE2 /* CocosDenshion.m */; };
 		46C7B5B715D639B800215EE2 /* SimpleAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5B615D639B800215EE2 /* SimpleAudioEngine.m */; };
-		46C7B5BC15D639B800215EE2 /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5BB15D639B800215EE2 /* CLScoreServerPost.m */; };
-		46C7B5BF15D639B800215EE2 /* CLScoreServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5BE15D639B800215EE2 /* CLScoreServerRequest.m */; };
-		46C7B5C215D639B800215EE2 /* cocoslive.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5C115D639B800215EE2 /* cocoslive.m */; };
 		46C7B5C715D639B800215EE2 /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5C615D639B800215EE2 /* CDataScanner.m */; };
 		46C7B5CB15D639B800215EE2 /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5CA15D639B800215EE2 /* CDataScanner_Extensions.m */; };
 		46C7B5CE15D639B800215EE2 /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5CD15D639B800215EE2 /* NSDictionary_JSONExtensions.m */; };
@@ -122,6 +119,10 @@
 		46C7B5F215D639B800215EE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5F115D639B800215EE2 /* AppDelegate.m */; };
 		46C7B5F515D639B800215EE2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5F415D639B800215EE2 /* RootViewController.m */; };
 		46C7B5F815D639B800215EE2 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C7B5F715D639B800215EE2 /* HelloWorldLayer.m */; };
+		46C7B60215D639D600215EE2 /* fruit1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46C7B5FF15D639D600215EE2 /* fruit1.png */; };
+		46C7B60315D639D600215EE2 /* fruit2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46C7B60015D639D600215EE2 /* fruit2.png */; };
+		46C7B60415D639D600215EE2 /* fruit3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46C7B60115D639D600215EE2 /* fruit3.png */; };
+		46C7B60615D640A800215EE2 /* love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 46C7B60515D640A800215EE2 /* love.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -319,12 +320,6 @@
 		46C7B5B515D639B800215EE2 /* SimpleAudioEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleAudioEngine.h; path = libs/CocosDenshion/SimpleAudioEngine.h; sourceTree = "<group>"; };
 		46C7B5B615D639B800215EE2 /* SimpleAudioEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SimpleAudioEngine.m; path = libs/CocosDenshion/SimpleAudioEngine.m; sourceTree = "<group>"; };
 		46C7B5B815D639B800215EE2 /* LICENSE_CocosDenshion.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_CocosDenshion.txt; path = libs/LICENSE_CocosDenshion.txt; sourceTree = "<group>"; };
-		46C7B5BA15D639B800215EE2 /* CLScoreServerPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLScoreServerPost.h; path = libs/cocoslive/CLScoreServerPost.h; sourceTree = "<group>"; };
-		46C7B5BB15D639B800215EE2 /* CLScoreServerPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLScoreServerPost.m; path = libs/cocoslive/CLScoreServerPost.m; sourceTree = "<group>"; };
-		46C7B5BD15D639B800215EE2 /* CLScoreServerRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CLScoreServerRequest.h; path = libs/cocoslive/CLScoreServerRequest.h; sourceTree = "<group>"; };
-		46C7B5BE15D639B800215EE2 /* CLScoreServerRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CLScoreServerRequest.m; path = libs/cocoslive/CLScoreServerRequest.m; sourceTree = "<group>"; };
-		46C7B5C015D639B800215EE2 /* cocoslive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = cocoslive.h; path = libs/cocoslive/cocoslive.h; sourceTree = "<group>"; };
-		46C7B5C115D639B800215EE2 /* cocoslive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = cocoslive.m; path = libs/cocoslive/cocoslive.m; sourceTree = "<group>"; };
 		46C7B5C315D639B800215EE2 /* LICENSE_TouchJSON.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE_TouchJSON.txt; path = libs/LICENSE_TouchJSON.txt; sourceTree = "<group>"; };
 		46C7B5C515D639B800215EE2 /* CDataScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CDataScanner.h; path = libs/TouchJSON/CDataScanner.h; sourceTree = "<group>"; };
 		46C7B5C615D639B800215EE2 /* CDataScanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CDataScanner.m; path = libs/TouchJSON/CDataScanner.m; sourceTree = "<group>"; };
@@ -360,6 +355,14 @@
 		46C7B5F615D639B800215EE2 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		46C7B5F715D639B800215EE2 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		46C7B5F915D639B800215EE2 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
+		46C7B5FF15D639D600215EE2 /* fruit1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit1.png; sourceTree = "<group>"; };
+		46C7B60015D639D600215EE2 /* fruit2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit2.png; sourceTree = "<group>"; };
+		46C7B60115D639D600215EE2 /* fruit3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit3.png; sourceTree = "<group>"; };
+		46C7B60515D640A800215EE2 /* love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = love.mp3; sourceTree = "<group>"; };
+		46C7B60715D6441700215EE2 /* bitches.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bitches.ttf; sourceTree = "<group>"; };
+		46ED2DAE15D6455700B1FB13 /* nb_strange.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nb_strange.ttf; sourceTree = "<group>"; };
+		46ED2DB015D6478C00B1FB13 /* CCLabelTTF+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCLabelTTF+Resize.h"; sourceTree = "<group>"; };
+		46ED2DB115D6478C00B1FB13 /* CCLabelTTF+Resize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CCLabelTTF+Resize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +425,8 @@
 				46C7B5F415D639B800215EE2 /* RootViewController.m */,
 				46C7B5F615D639B800215EE2 /* HelloWorldLayer.h */,
 				46C7B5F715D639B800215EE2 /* HelloWorldLayer.m */,
+				46ED2DB015D6478C00B1FB13 /* CCLabelTTF+Resize.h */,
+				46ED2DB115D6478C00B1FB13 /* CCLabelTTF+Resize.m */,
 				46C7B5F915D639B800215EE2 /* GameConfig.h */,
 				46C7B49F15D639B500215EE2 /* Resources */,
 				46C7B4B315D639B500215EE2 /* libs */,
@@ -433,6 +438,12 @@
 		46C7B49F15D639B500215EE2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46ED2DAE15D6455700B1FB13 /* nb_strange.ttf */,
+				46C7B60715D6441700215EE2 /* bitches.ttf */,
+				46C7B60515D640A800215EE2 /* love.mp3 */,
+				46C7B5FF15D639D600215EE2 /* fruit1.png */,
+				46C7B60015D639D600215EE2 /* fruit2.png */,
+				46C7B60115D639D600215EE2 /* fruit3.png */,
 				46C7B4A015D639B500215EE2 /* Default.png */,
 				46C7B4A215D639B500215EE2 /* fps_images.png */,
 				46C7B4A415D639B500215EE2 /* Icon-72.png */,
@@ -456,7 +467,6 @@
 				46C7B5EB15D639B800215EE2 /* LICENSE_FontLabel.txt */,
 				46C7B4B415D639B500215EE2 /* cocos2d */,
 				46C7B5AA15D639B700215EE2 /* CocosDenshion */,
-				46C7B5B915D639B800215EE2 /* cocoslive */,
 				46C7B5C415D639B800215EE2 /* TouchJSON */,
 				46C7B5DA15D639B800215EE2 /* FontLabel */,
 			);
@@ -682,19 +692,6 @@
 			name = CocosDenshion;
 			sourceTree = "<group>";
 		};
-		46C7B5B915D639B800215EE2 /* cocoslive */ = {
-			isa = PBXGroup;
-			children = (
-				46C7B5BA15D639B800215EE2 /* CLScoreServerPost.h */,
-				46C7B5BB15D639B800215EE2 /* CLScoreServerPost.m */,
-				46C7B5BD15D639B800215EE2 /* CLScoreServerRequest.h */,
-				46C7B5BE15D639B800215EE2 /* CLScoreServerRequest.m */,
-				46C7B5C015D639B800215EE2 /* cocoslive.h */,
-				46C7B5C115D639B800215EE2 /* cocoslive.m */,
-			);
-			name = cocoslive;
-			sourceTree = "<group>";
-		};
 		46C7B5C415D639B800215EE2 /* TouchJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -817,6 +814,10 @@
 				46C7B4AD15D639B500215EE2 /* Icon.png in Resources */,
 				46C7B4AF15D639B500215EE2 /* Icon@2x.png in Resources */,
 				46C7B4B215D639B500215EE2 /* iTunesArtwork in Resources */,
+				46C7B60215D639D600215EE2 /* fruit1.png in Resources */,
+				46C7B60315D639D600215EE2 /* fruit2.png in Resources */,
+				46C7B60415D639D600215EE2 /* fruit3.png in Resources */,
+				46C7B60615D640A800215EE2 /* love.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,9 +908,6 @@
 				46C7B5B115D639B700215EE2 /* CDOpenALSupport.m in Sources */,
 				46C7B5B415D639B800215EE2 /* CocosDenshion.m in Sources */,
 				46C7B5B715D639B800215EE2 /* SimpleAudioEngine.m in Sources */,
-				46C7B5BC15D639B800215EE2 /* CLScoreServerPost.m in Sources */,
-				46C7B5BF15D639B800215EE2 /* CLScoreServerRequest.m in Sources */,
-				46C7B5C215D639B800215EE2 /* cocoslive.m in Sources */,
 				46C7B5C715D639B800215EE2 /* CDataScanner.m in Sources */,
 				46C7B5CB15D639B800215EE2 /* CDataScanner_Extensions.m in Sources */,
 				46C7B5CE15D639B800215EE2 /* NSDictionary_JSONExtensions.m in Sources */,
@@ -971,6 +969,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sabor Studio (NP4Y862LY9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -979,6 +979,8 @@
 				INFOPLIST_FILE = BloodyFruits/Resources/Info.plist;
 				OTHER_LDFLAGS = "-lz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "819CA205-47A6-4B73-AE5F-B712F2956024";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "819CA205-47A6-4B73-AE5F-B712F2956024";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1018,6 +1020,7 @@
 				46C7B5FE15D639B800215EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
